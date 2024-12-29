@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Addtocart/cart.css">
+</head>
+
+<body>
+    <div class="cart-container">
+    </div>
+    <div class="total">
+        <h2></h2>
+        <h2></h2>
+        <div class="last"><button class="checkout-btn">Checkout</button></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        section = document.getElementsByClassName("total")[0];
+        const heading = document.getElementsByTagName("h2");
+        const cartContainer = document.querySelector(".cart-container");
+        const checkoutButton = document.querySelector(".checkout-btn");
+
+        let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        let totalItems = JSON.parse(localStorage.getItem("totalItems")) || 0;
+
+        cartItems = cartItems.map(x => ({
+            ...x,
+            price: typeof x.price === "string" && x.price.charAt(0) === "$" ? x.price.slice(1) : x.price ||
+                0
+        }));
+
+        if (cartItems.length > 0) {
+            section.style.display = "block";
+        }
+
+        function changeCart() {
+            cartContainer.innerHTML = "";
+            if (cartItems.length == 0) {
+                section.style.display = "none";
+                return;
+            }
+
+            let totalPrice = 0;
+            cartItems.forEach((item, index) => {
+                const card = document.createElement("div");
+                card.className = "card";
+
+                let price = item.price * item.count;
+                totalPrice += price;
+
+                card.innerHTML = `
+                    <div class="card-details">
+                        <img src="${item.image}" alt="${item.title}">
+                        <h3>${item.title}</h3>
+                        <div class="quantity-controls">
+                            <button class="dec">-</button>
+                            <span>${item.count}</span>
+                            <button class="inc">+</button>
+                        </div>
+                        <p class="price">$${price.toFixed(2)}</p>
+                    </div>
+                `;
+
+                cartContainer.appendChild(card);
+
+                const decBtn = card.querySelector(".dec");
+                const incBtn = card.querySelector(".inc");
+                const quantitySpan = card.querySelector("span");
+
+                decBtn.addEventListener("click", () => {
+                    if (item.count > 1) {
+                        item.count -= 1;
+                        totalItems -= 1;
+                        totalPrice -= item.price;
+                    } else {
+                        cartItems.splice(index, 1);
+                        totalItems -= 1;
+                        totalPrice -= item.price;
+                    }
+                    updateCart();
+                });
+
+                incBtn.addEventListener("click", () => {
+                    item.count += 1;
+                    totalItems++;
+                    updateCart();
+                });
+            });
+
+            heading[0].innerHTML = `Total Items = ${totalItems}`;
+            heading[1].innerHTML = `Total Price = ${totalPrice.toFixed(2)}`;
+        }
+
+        function updateCart() {
+            localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            localStorage.setItem("totalItems", JSON.stringify(totalItems));
+            changeCart();
+        }
+
+        checkoutButton.addEventListener("click", () => {
+            if (cartItems.length > 0) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Order Placed Successfully!',
+                    text: 'Thank you for your purchase!',
+                }).then(() => {
+                    window.location.href = "../Home_page/Home.html";
+                });
+                cartItems = [];
+                totalItems = 0;
+                updateCart();
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Cart is Empty!',
+                    text: 'Please add items to your cart before checking out.',
+                })
+            }
+        })
+
+
+
+        changeCart();
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Each-Item</title>
+  <link rel="stylesheet" href="../Singlecard_page/singlecard.css">
+</head>
+
+<body>
+
+  <script>
+    const eachItem = JSON.parse(localStorage.getItem("eachItem"))
+    console.log(eachItem)
+    let eachCard = document.createElement("div")
+    eachCard.className = "card"
+    eachCard.innerHTML = `
+        <img src="${eachItem.image}" alt="Item Image">
+        <h3>${eachItem.title}</h3>
+        <p>${eachItem.description}</p>
+        <span>${eachItem.price}</span>
+        <button id="buyNow">Buy Now</button>
+        `
+    document.body.append(eachCard)
+    eachCard.querySelector("#buyNow").addEventListener("click", (e) => {
+      e.stopPropagation();
+      window.location.href = "../Addtocart/cart.html";
+    });
+  </script>
+</body>
+
+</html>

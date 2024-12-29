@@ -1,0 +1,324 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url("../Images/signinbg.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #D7D3BF;
+    padding: 10px 40px 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+form:hover {
+    transform: translateY(-10px);
+    opacity: 0.95;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 94%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #ff6347;
+    box-shadow: 0 0 8px rgba(255, 99, 71, 0.4);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #441752;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #1B1833;
+    transform: scale(1.05);
+}
+
+h4 a {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    color: #2A3663;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.password-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.password-field input {
+    width: 100%;
+
+}
+
+.password-field i {
+    position: absolute;
+    right: 0.75rem;
+    cursor: pointer;
+    color: #888;
+}
+
+@media (min-width:320px) and (max-width:424px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        background-image: url("../Images/signinbg.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    h1 {
+        text-align: center;
+        color: #444;
+        margin-bottom: 20px;
+    }
+
+    form {
+        background-color: #D7D3BF;
+        padding: 10px 40px 30px 40px;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        margin: 0 1rem 0 1rem;
+    }
+
+    form:hover {
+        transform: translateY(-10px);
+        opacity: 0.95;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 92%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+        border-color: #ff6347;
+        box-shadow: 0 0 8px rgba(255, 99, 71, 0.4);
+        outline: none;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #441752;
+        border: none;
+        border-radius: 5px;
+        color: whitesmoke;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #1B1833;
+        transform: scale(1.05);
+    }
+
+    h4 a {
+        display: block;
+        margin-top: 15px;
+        text-align: center;
+        color: #2A3663;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .password-field {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .password-field input {
+        width: 100%;
+
+    }
+
+    .password-field i {
+        position: absolute;
+        right: 0.75rem;
+        cursor: pointer;
+        color: #888;
+    }
+}
+
+@media (min-width:425px) and (max-width:1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        background-image: url("../Images/signinbg.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    h1 {
+        text-align: center;
+        color: #444;
+        margin-bottom: 20px;
+    }
+
+    form {
+        background-color: #D7D3BF;
+        padding: 10px 40px 30px 40px;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        margin: 0 1rem 0 1rem;
+    }
+
+    form:hover {
+        transform: translateY(-10px);
+        opacity: 0.95;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 94%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+        border-color: #ff6347;
+        box-shadow: 0 0 8px rgba(255, 99, 71, 0.4);
+        outline: none;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #441752;
+        border: none;
+        border-radius: 5px;
+        color: whitesmoke;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #1B1833;
+        transform: scale(1.05);
+    }
+
+    h4 a {
+        display: block;
+        margin-top: 15px;
+        text-align: center;
+        color: #2A3663;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .password-field {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .password-field input {
+        width: 100%;
+
+    }
+
+    .password-field i {
+        position: absolute;
+        right: 0.75rem;
+        cursor: pointer;
+        color: #888;
+    }
+
+}

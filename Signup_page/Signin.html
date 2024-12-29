@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../Signup_page/signup.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <div class="container">
+        <form action="" method="get" id="btn">
+            <h1>Create an Account</h1>
+            <input type="text" id="userName" placeholder="Enter name" pattern="[A-Za-z\s]{3,}"
+                title="Name should only contain letters and spaces, at least 3 characters long." required>
+            <input type="email" id="userEmail" placeholder="Enter Email" title="Please enter a valid email address."
+                required>
+            <div class="password-field">
+                <input type="password" id="userPswd" placeholder="Enter Password"
+                    pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
+                    title="Password must be at least 8 characters long, with one uppercase letter, one lowercase letter, one number, and one special character."
+                    required>
+                <i class="fa-solid fa-eye-slash" id="icon"></i>
+            </div>
+            <input type="password" id="userPswdConfirm" placeholder="Confirm Password" oninput="validatePassword()"
+                title="Passwords must match." required>
+            <button>Sign in</button>
+            <div class="already-exists">
+                <h4><a href="../Login_page/Login.html"> Already Exists..!!! Log in</a></h4>
+            </div>
+        </form>
+    </div>
+    <script src="../Signup_page/Signin.js">
+    </script>
+</body>
+
+</html>
