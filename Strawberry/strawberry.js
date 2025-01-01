@@ -130,7 +130,6 @@ strawberryCards.forEach((item, index) => {
     e.stopImmediatePropagation();
     addToCart(index);
     Swal.fire({
-        title: "Added to Cart!",
         text: "The item has been successfully added to your cart.",
         icon: "success",
         timer: 1500,
