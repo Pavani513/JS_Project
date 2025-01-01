@@ -124,7 +124,6 @@ ferreroCards.forEach((item, index) => {
     e.stopImmediatePropagation();
     addToCart(index);
     Swal.fire({
-      title: "Added to Cart!",
       text: "The item has been successfully added to your cart.",
       icon: "success",
       timer: 1500,
@@ -142,66 +141,3 @@ ferreroCards.forEach((item, index) => {
     window.location.href = "../Singlecard_page/eachitem.html";
   });
 });
-
-
-// let ferrero=document.getElementById("cardContainer")
-// ferreroCards.forEach(x => {
-//   let candy=document.createElement("div")
-//   candy.innerHTML=`<img src="${x.image}">
-//   <h3>${x.title}</h3>
-//   <p>${x.description}</p>
-//   <span>${x.price}</span>
-//   <button id="addToCart">Add to cart</button>
-//   <button id="buyNow">Buy Now</button>
-//   `
-// candy.style.border="2px solid black"
-// candy.style.boxSizing="box-shadow"
-// candy.style.padding="20px"
-// candy.style.display="flex"
-// candy.style.flexDirection="column"
-// candy.style.justifyContent="center"
-// candy.style.alignItems="center"
-// let a=candy.getElementsByTagName("img")[0]
-// a.style.width="25vw"
-// a.style.height="30vh"
-// ferrero.style.display="flex"
-// ferrero.style.flexWrap="wrap"
-// ferrero.style.gap="20px"
-// ferrero.style.justifyContent="center"
-// ferrero.style.alignItems="center"
-//   cardContainer.append(candy)
-
-//   candy.querySelector("#addToCart").addEventListener("click",(e)=>{
-//     e.stopImmediatePropagation()
-//    let confirmAddingCart=confirm("Do you wanna add item to cart?")
-//    if(confirmAddingCart){
-//     const allAddedItems=JSON.parse(localStorage.getItem("addItems")) || []
-//    allAddedItems.push(x)
-//     localStorage.setItem("addItems",JSON.stringify(allAddedItems))
-//     alert("added item into cart")
-//    }
-//   })
-
-//   candy.addEventListener("click",()=>{
-//     localStorage.setItem("eachItem",JSON.stringify(x))
-//     window.location.href="../Singlecard_page/eachitem.html"
-//   })
-
-//             // SEEMORE
-//   // candy.querySelector("#seeMore").addEventListener("click",()=>{
-//   //   // localStorage.setItem("seeMore",JSON.stringify(x))
-//   //   window.location.href="../Ferrorocher/ferrorocher.html"
-//   // })
-
-// candy.querySelector("#buyNow").addEventListener("click",(e)=>{
-//   e.stopImmediatePropagation()
-//   window.location.href="../Addtocart/cart.html"
-// })
-
-
-//   // candy.addEventListener("click",()=>{
-//   //   localStorage.setItem("seeMore",JSON.stringify(x))
-//   //   window.location.href="ferrero.html"
-
-
-// })
