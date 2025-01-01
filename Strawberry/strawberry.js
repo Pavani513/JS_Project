@@ -65,7 +65,7 @@ const strawberryCards = [{
     price: "$175"
   },
   {
-    image: 'https://www.imperialsugar.com/sites/default/files/recipe/Strawberry-Crunch-Cookies-imperial.jpg',
+    image: 'https://www.bigbearswife.com/wp-content/uploads/2022/02/overhead-shot-of-STRAWBERRY-CRUNCH-COOKIES-with-fresh-strawberries-on-the-side-1-480x480.jpg',
     title: 'Strawberry Crunch',
     description: 'Crunchy candies with a strawberry kick.',
     price: "$55"
