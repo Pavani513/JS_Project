@@ -26,6 +26,7 @@ a {
 
 .navbar h1 {
     font-size: 2rem;
+    font-weight: bold;
     color: #fff;
     margin: 0;
 }
@@ -280,6 +281,7 @@ textarea {
 @media (min-width: 320px) and (max-width: 424px) {
     .navbar h1 {
         font-size: 1.5rem;
+        font-weight: bold;
     }
 
     .navbar-nav {
@@ -334,12 +336,26 @@ textarea {
 
     .add {
         font-size: 2rem;
+        margin-left: 1.7rem;
     }
-
+    .info{
+        margin-left: 1.7rem;
+    }
+    .store{
+        margin-left: 1.7rem;
+    }
+    .about {
+        font-family: cursive;
+        font-weight: bolder;
+        color: darkolivegreen;
+        margin-left: 1.7rem;
+    }
     .touch {
         font-size: 2rem;
     }
-
+    .right{
+        margin-left: 1.2rem;
+    }
     #contact .left,
     #contact .right {
         width: 90%;
@@ -410,7 +426,8 @@ textarea {
 @media (min-width: 425px) and (max-width: 1024px) {
 
     .navbar h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        font-weight: bold;
     }
 
     .navbar-nav {
@@ -467,7 +484,12 @@ textarea {
     .add {
         font-size: 2rem;
     }
-
+    .left{
+        margin-left: 2rem;
+    }
+    .right{
+        margin-left: 1.5rem;
+    }
     .touch {
         font-size: 2rem;
     }
