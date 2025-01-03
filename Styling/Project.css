@@ -17,7 +17,8 @@ a {
 }
 
 .navbar h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: bold;
   color: #fff;
   margin: 0;
 }
@@ -137,7 +138,7 @@ h2 {
 }
 
 .candy-card img {
-  max-width: 250px;
+  width: 250px;
   height: 250px;
   object-fit: cover;
   border-radius: 8px;
@@ -201,7 +202,8 @@ h2 {
   }
 
   .navbar h1 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    font-weight: bold;
     color: #fff;
     margin-left: -2rem;
   }
@@ -299,7 +301,7 @@ h2 {
   }
 
   .candy-card img {
-    max-width: 100%;
+    width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
@@ -363,7 +365,8 @@ h2 {
   }
 
   .navbar h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: bold;
     color: #fff;
     margin: 0;
   }
@@ -484,12 +487,12 @@ h2 {
   }
 
   .candy-card img {
-    max-width: 100%;
+    width: 230px;
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
   }
-
+  
   .candy-card h4 {
     margin: 10px 0;
     font-size: 1.2rem;
