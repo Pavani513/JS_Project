@@ -102,27 +102,39 @@
             localStorage.setItem("totalItems", JSON.stringify(totalItems));
             changeCart();
         }
-
         checkoutButton.addEventListener("click", () => {
-            if (cartItems.length > 0) {
+    if (cartItems.length > 0) {
+        Swal.fire({
+            icon: 'question',
+            title: 'Do you want to add more items?',
+            showCancelButton: true,
+            confirmButtonText: 'Yes',
+            cancelButtonText: 'No',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "../Home_page/Home.html";
+            } else {
                 Swal.fire({
                     icon: 'success',
                     title: 'Order Placed Successfully!',
                     text: 'Thank you for your purchase!',
                 }).then(() => {
                     window.location.href = "../Home_page/Home.html";
+                    cartItems = [];
+                    totalItems = 0;
+                    updateCart();
                 });
-                cartItems = [];
-                totalItems = 0;
-                updateCart();
-            } else {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Cart is Empty!',
-                    text: 'Please add items to your cart before checking out.',
-                })
             }
-        })
+        });
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Cart is Empty!',
+            text: 'Please add items to your cart before checking out.',
+        });
+    }
+});
+
 
 
 
