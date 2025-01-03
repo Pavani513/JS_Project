@@ -129,6 +129,30 @@ function addToCart(index) {
   localStorage.setItem("totalItems", JSON.stringify(totalItems));
 }
 
+function buyNow(index) {
+  let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+  let found = false;
+
+  for (let i = 0; i < cartItems.length; i++) {
+    if (cartItems[i].title === chocolateCards[index].title) {
+      cartItems[i].count += 1;
+      found = true;
+      break;
+    }
+  }
+
+  if (!found) {
+    cartItems.push({
+      ...chocolateCards[index],
+      count: 1,
+    });
+  }
+  totalItems++
+  span.textContent = totalItems
+  localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  localStorage.setItem("totalItems", JSON.stringify(totalItems));
+}
+
 chocolateCards.forEach((item, index) => {
   let candy = document.createElement("div");
   candy.classList.add("candy-card");
@@ -157,6 +181,7 @@ chocolateCards.forEach((item, index) => {
 
   candy.querySelector(".buy-now").addEventListener("click", (e) => {
     e.stopPropagation();
+    buyNow(index);
     window.location.href = "../Addtocart/cart.html";
   });
 
