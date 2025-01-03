@@ -73,7 +73,7 @@ button {
 
 button:hover {
     background-color: #1B1833;
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 h4 a {
