@@ -12,6 +12,7 @@
 <body>
     <div class="cart-container">
     </div>
+    <h1>Cart is empty</h1>
     <div class="total">
         <h2></h2>
         <h2></h2>
@@ -22,6 +23,7 @@
 
     <script>
         section = document.getElementsByClassName("total")[0];
+        emp = document.getElementsByTagName("h1")[0]
         const heading = document.getElementsByTagName("h2");
         const cartContainer = document.querySelector(".cart-container");
         const checkoutButton = document.querySelector(".checkout-btn");
@@ -37,12 +39,14 @@
 
         if (cartItems.length > 0) {
             section.style.display = "block";
+            emp.style.display="none"
         }
 
         function changeCart() {
             cartContainer.innerHTML = "";
             if (cartItems.length == 0) {
                 section.style.display = "none";
+                emp.style.display = "block"
                 return;
             }
 
@@ -93,7 +97,7 @@
                 });
             });
 
-            heading[0].innerHTML = `Total Items = ${totalItems}`;
+            heading[0].innerHTML =` Total Items = ${totalItems}`;
             heading[1].innerHTML = `Total Price = ${totalPrice.toFixed(2)}`;
         }
 
@@ -134,10 +138,6 @@
         });
     }
 });
-
-
-
-
         changeCart();
     </script>
 </body>
