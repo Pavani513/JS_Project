@@ -48,9 +48,9 @@ const candyCards = [{
     }
 ];
 
-if (sessionStorage.getItem("islogin") !== "true") {
-    location.href = "../Login_page/Login.html";
-}
+// if (sessionStorage.getItem("islogin") !== "true") {
+//     location.href = "../Login_page/Login.html";
+// }
 let span = document.getElementById("count")
 let boxContainer = document.getElementById("boxContainer");
 let cartBtn = document.getElementsByTagName("button")[0];
