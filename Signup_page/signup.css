@@ -59,7 +59,7 @@ input[type="password"]:focus {
     outline: none;
 }
 
-button {
+.signin {
     width: 100%;
     padding: 12px;
     background-color: #441752;
@@ -71,11 +71,25 @@ button {
     transition: all 0.3s ease;
 }
 
-button:hover {
+.signin:hover {
     background-color: #1B1833;
     transform: scale(1.01);
 }
-
+.gue {
+    float: right;
+    padding: 10px ;
+    border: 2px red;
+    background-color: red;
+    color: white;
+    margin-top: 0.5rem;
+    border-radius: 5%;
+    font-weight: bold;
+}
+.gue:hover{
+    color: black;
+    font-weight: bold;
+    transform: scale(1.05);
+}
 h4 a {
     display: block;
     margin-top: 15px;
@@ -167,7 +181,7 @@ h4 a {
         outline: none;
     }
 
-    button {
+    .signin {
         width: 100%;
         padding: 12px;
         background-color: #441752;
@@ -179,11 +193,28 @@ h4 a {
         transition: all 0.3s ease;
     }
 
-    button:hover {
+    .signin:hover {
         background-color: #1B1833;
         transform: scale(1.05);
     }
-
+    .gue {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 2px red;
+        background-color: red;
+        color: white;
+        margin-top: 0.5rem;
+        border-radius: 5%;
+        font-weight: lighter;
+        margin-bottom: 0.5rem;
+    }
+    .gue:hover{
+        color: black;
+        font-weight: bold;
+        transform: scale(1.05);
+    }
     h4 a {
         display: block;
         margin-top: 15px;
@@ -276,7 +307,7 @@ h4 a {
         outline: none;
     }
 
-    button {
+    .signin {
         width: 100%;
         padding: 12px;
         background-color: #441752;
@@ -288,11 +319,28 @@ h4 a {
         transition: all 0.3s ease;
     }
 
-    button:hover {
+    .signin:hover {
         background-color: #1B1833;
         transform: scale(1.05);
     }
-
+    .gue {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 2px red;
+        background-color: red;
+        color: white;
+        margin-top: 0.5rem;
+        border-radius: 5%;
+        font-weight: lighter;
+        margin-bottom: 0.5rem;
+    }
+    .gue:hover{
+        color: black;
+        font-weight: bold;
+        transform: scale(1.05);
+    }
     h4 a {
         display: block;
         margin-top: 15px;
