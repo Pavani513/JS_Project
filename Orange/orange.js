@@ -2,73 +2,73 @@ const orangeCards = [{
     image: "https://media.istockphoto.com/id/545119500/photo/colorful-jelly-candies-closeup.jpg?s=612x612&w=0&k=20&c=JaT2vfSB4APCHDmjiKXV8FcGnQ2kY8ZD5ZFizXhaCLQ=",
     title: "Citrus Gummy Bears",
     description: "Soft gummy bears with refreshing orange flavor.",
-    price: "$59"
+    price: "₹59"
   },
   {
     image: "https://rukminim2.flixcart.com/image/850/1000/xif0q/chocolate/o/w/7/360-fruit-slice-shape-orange-flovoured-lollipop-for-kid-s-baby-original-imah33tge3f2tpat.jpeg?q=20&crop=false",
     title: "Tangy Orange Lollipops",
     description: "Classic orange-flavored lollipops for a sweet treat.",
-    price: "$39"
+    price: "₹39"
   },
   {
     image: "https://rukminim2.flixcart.com/image/850/1000/koad9jk0/candy-mouth-freshener/t/t/s/84-sugar-free-mints-orange-pack-of-6-impact-mints-original-imag2sygm6q9fh4s.jpeg?q=20&crop=false",
     title: "Orange Sherbet Mints",
     description: "Cooling mints with a hint of orange sherbet.",
-    price: "$50"
+    price: "₹50"
   },
   {
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy9_8Xg7fpR99RPlqHolCzazIUr0HTSQkIHQ&s",
     title: "Orange Fruit Slices",
     description: "Sugary jelly fruit slices with a zesty orange flavor.",
-    price: "$70"
+    price: "₹70"
   },
   {
     image: "https://www.jiomart.com/images/product/original/490008743/parle-orange-bite-candy-214-5-g-product-images-o490008743-p490008743-0-202404151952.jpg?im=Resize=(1000,1000)",
     title: "Orange Taffy Bites",
     description: "Soft, chewy taffy with a burst of orange flavor.",
-    price: "$35"
+    price: "₹35"
   },
   {
     image: "https://www.lorentanuts.com/wp-content/uploads/2020/10/Orange-Licorice-Jelly-Belly-Front-1-www.lorentanuts.com_.jpg",
     title: "Zesty Orange Licorice",
     description: "Twisted licorice with a tangy orange taste.",
-    price: "$99"
+    price: "₹99"
   },
   {
     image: "https://shop.old-mill.com/cdn/shop/products/2450-DEFAULT-l.jpg?v=1547132963",
     title: "Orange Sugar Sticks",
     description: "Crunchy sugar sticks packed with orange goodness.",
-    price: "$20"
+    price: "₹20"
   },
   {
     image: "https://sapphireconfectionery.com/cdn/shop/products/1_b3d9788f-67fa-4bfc-b208-0f1b0346caa5_1200x1200.jpg?v=1632297405",
     title: "Crispy Orange Wafers",
     description: "Light, crispy wafers filled with creamy orange filling.",
-    price: "$100"
+    price: "₹100"
   },
   {
     image: "https://5.imimg.com/data5/SM/YM/IZ/SELLER-46615966/chupachups.jpg",
     title: "Orange Sour Belts",
     description: "Tangy sour belts with a zingy orange kick.",
-    price: "$75"
+    price: "₹75"
   },
   {
     image: "https://doscherscandies.com/cdn/shop/files/Doschers_OrangeSlices3_comp_1800x1800.jpg?v=1716292749",
     title: "Fizzy Orange Hard Candy",
     description: "Hard candy that fizzes with an orange explosion.",
-    price: "$35"
+    price: "₹35"
   },
   {
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOKy1JySrjObDYEwYJrn7BBfHa7CcEC42Ojg&s",
     title: "Orange Candy Canes",
     description: "A citrus twist on the traditional candy cane.",
-    price: "$99"
+    price: "₹99"
   },
   {
     image: "https://i.pinimg.com/736x/b4/32/b2/b432b24cbecca72f303ad2f08325f58f.jpg",
     title: "Orange Pop Rocks",
     description: "Popping candy that crackles with orange flavor.",
-    price: "$49"
+    price: "₹49"
   }
 ];
 
