@@ -86,6 +86,16 @@ input.addEventListener("keypress", (e) => {
 });
 
 
+document.querySelector('.sub').addEventListener('click', function () {
+    Swal.fire({
+        icon: 'success',
+        text: 'Your response has been saved. Thank you!',
+        confirmButtonText: 'OK'
+    });
+});
+
+
+
 const logoutBtn = document.getElementById("logoutBtn");
 logoutBtn.addEventListener("click", (e) => {
     e.preventDefault();
