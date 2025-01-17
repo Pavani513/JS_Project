@@ -33,7 +33,7 @@
 
         cartItems = cartItems.map(x => ({
             ...x,
-            price: typeof x.price === "string" && x.price.charAt(0) === "$" ? x.price.slice(1) : x.price ||
+            price: typeof x.price === "string" && x.price.charAt(0) === "₹" ? x.price.slice(1) : x.price ||
                 0
         }));
 
@@ -67,7 +67,7 @@
                             <span>${item.count}</span>
                             <button class="inc">+</button>
                         </div>
-                        <p class="price">$${price.toFixed(2)}</p>
+                        <p class="price">₹${price.toFixed(2)}</p>
                     </div>
                 `;
 
